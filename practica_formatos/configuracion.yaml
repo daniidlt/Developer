@@ -1,0 +1,16 @@
+nombre: Buscalo
+version: 2.1
+modo_ejecucion: Desarrollo
+puerto: 2712 
+
+database:
+ nombre: Mi base
+ usuario: Daniel
+ contraseña: daniel2007
+
+tiempo_espera:
+ conexion: 30546
+ solicitud: 233566
+
+ color: "Gris"
+
