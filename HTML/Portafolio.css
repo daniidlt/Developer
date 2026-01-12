@@ -1,0 +1,110 @@
+/* Fuente general */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* Navegación */
+header {
+    background: #222;
+    padding: 15px 0;
+}
+
+.menu, .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu a, .footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover, .footer-nav a:hover {
+    color: #00bcd4;
+}
+
+/* Presentación */
+.presentacion {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.presentacion h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.presentacion h3 {
+    font-size: 1.3rem;
+    color: #555;
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    border: 2px solid #222;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    background: #222;
+    color: white;
+}
+
+/* Sección de títulos */
+.titulos {
+    background: white;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.titulos h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.titulos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.titulos li {
+    background: #eaeaea;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
