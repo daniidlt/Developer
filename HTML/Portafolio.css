@@ -1,14 +1,12 @@
-/* Fuente general */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
-    color: #222;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-escritorio-moderno-vector-diseno-azul-geometrico_53876-135923.jpg?semt=ais_hybrid&w=740&q=80);
 }
 
-/* Navegación */
 header {
     background: #222;
+    color: white;
     padding: 15px 0;
 }
 
@@ -19,21 +17,19 @@ header {
 }
 
 .menu a, .footer-nav a {
-    color: white;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
+    color: white;
 }
 
 .menu a:hover, .footer-nav a:hover {
     color: #00bcd4;
 }
 
-/* Presentación */
 .presentacion {
     text-align: center;
     padding: 60px 20px;
-    background: white;
     margin: 20px;
     border-radius: 10px;
 }
@@ -41,15 +37,19 @@ header {
 .presentacion h1 {
     font-size: 3rem;
     margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(124, 58, 237, 0.6); 
 }
 
 .presentacion h3 {
     font-size: 1.3rem;
-    color: #555;
+    color: #818cf8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .social {
-    margin-top: 20px;
+    margin-top: 30px; /* Un poco más de aire arriba */
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -57,30 +57,49 @@ header {
 
 .social a {
     text-decoration: none;
-    color: #222;
-    font-weight: bold;
-    border: 2px solid #222;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
+    color: #ffffff; /* Letra blanca limpia */
+    font-weight: 500;
+    
+    /* El borde usa el color índigo (parecido al del título h3) */
+    border: 2px solid #818cf8; 
+    
+    padding: 10px 25px; /* Botones un poco más grandes y cómodos */
+    border-radius: 50px; /* Bordes totalmente redondeados */
+    background-color: transparent;
+    transition: all 0.3s ease;
+    
+    /* Un brillo suave inicial */
+    box-shadow: 0 0 5px rgba(129, 140, 248, 0.2);
 }
 
+/* Efecto al pasar el ratón: ¡Se enciende! */
 .social a:hover {
-    background: #222;
-    color: white;
+    background-color: #818cf8; /* Se rellena de color */
+    color: #0f172a; /* El texto se vuelve oscuro para leerse bien */
+    
+    /* Brillo intenso exterior */
+    box-shadow: 0 0 20px rgba(129, 140, 248, 0.6); 
+    
+    /* Pequeño movimiento hacia arriba */
+    transform: translateY(-3px);
 }
+
 
 /* Sección de títulos */
 .titulos {
-    background: white;
+    background: #111827; 
     margin: 20px;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 12px;
+    border: 1px solid #1f2937;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+    color: #f3f4f6;
 }
 
 .titulos h2 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: #a78bfa; 
 }
 
 .titulos ul {
@@ -89,22 +108,332 @@ header {
 }
 
 .titulos li {
-    background: #eaeaea;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 5px;
+    background: #1f2937;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 4px solid #7c3aed;
+    color: #e5e7eb;
+    transition: transform 0.2s;
 }
 
-/* Footer */
+.titulos li:hover {
+    transform: translateX(5px);
+    background: #374151;
+}
+
+.habilidades {
+    /* Mismo fondo oscuro base para consistencia visual */
+    background: #111827;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 12px;
+    /* Borde sutil azulado */
+    border: 1px solid #1f2937;
+    /* Sombra suave */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    color: #f3f4f6;
+}
+
+.habilidades h2, .experiencia h2 {
+    font-size: 2rem;
+    margin-bottom: 25px; /* Un poco más de espacio */
+    text-align: center;
+    
+    /* DETALLE DIFERENCIAL: Color Cian/Azul Eléctrico */
+    color: #22d3ee; 
+    text-shadow: 0 0 10px rgba(34, 211, 238, 0.2); /* Pequeño resplandor */
+}
+
+.habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+.habilidades li {
+    background: #1f2937;
+    padding: 15px 20px;
+    margin: 12px 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #e5e7eb;
+    border-left: 4px solid #06b6d4; 
+    transition: all 0.3s ease;
+    cursor: default; 
+}
+
+.habilidades li:hover {
+    background: #1e293b;
+    transform: scale(1.02);
+    border-left-color: #67e8f9; /*Brillo del borde*/
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+}
+
+
+/* Experiencia */
+.experiencia {
+    background: #111827; 
+    margin: 20px;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #1f2937;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+    color: #f3f4f6;
+}
+
+.experiencia h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #a78bfa; 
+    text-align: left;
+}
+
+.experiencia ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experiencia li {
+    background: #1f2937;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 4px solid #7c3aed;
+    color: #e5e7eb;
+    transition: transform 0.2s;
+}
+
+.experiencia li:hover {
+    transform: translateX(5px);
+    background: #374151;
+    border-left-color: #7dd3fc;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
+}
+
+.imagen-experiencia img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 10px auto; 
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    filter: brightness(0.9); /* Filtro  para que no brille tanto hasta que pase el ratón */
+    transition: all 0.3s ease;
+}
+
+.imagen-experiencia img:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(56, 189, 248, 0.3); /* Resplandor del fondo */
+}
+
+
+/* Sobre mí */
+.sobre-mi {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(10px); /* Desenfoque del fondo */
+    
+    border-radius: 16px;
+    border: 1px solid rgba(244, 114, 182, 0.1); 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    color: #f3f4f6;
+}
+
+.sobre-mi h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    color: #f472b6; 
+    border-bottom: 2px solid rgba(244, 114, 182, 0.3);
+    display: inline-block; 
+    padding-bottom: 5px;
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+}
+
+.sobre-mi p {
+    font-size: 1.15rem; 
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: left; 
+    color: #e5e7eb;
+}
+
+/* --- Estilo BOTÓN --- */
+.boton-info {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 35px;
+    
+    background: linear-gradient(45deg, #db2777, #f472b6);
+    color: white;
+    
+    text-decoration: none;
+    border-radius: 8px; 
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 20px rgba(219, 39, 119, 0.6); /* Resplandor rosa fuerte */
+    transform: scale(1.05);
+}
+
+.contenedor-foto {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.foto-perfil {
+    width: 200px;       
+    height: 200px;
+    object-fit: cover;  /* Para que no se deforme si no es cuadrada */
+    border-radius: 50%; /* La hace redonda */
+    border: 4px solid #f472b6; 
+    box-shadow: 0 0 20px rgba(244, 114, 182, 0.4);
+    background-color: #111827; 
+}
+
+
+/* Contacto */
+.contacto {
+    max-width: 600px;
+    margin: 60px auto 80px auto; 
+    padding: 40px;
+    
+    /* Fondo oscuro semitransparente */
+    background: rgba(17, 24, 39, 0.95);
+    backdrop-filter: blur(10px);
+    
+    border-radius: 16px;
+    /* Borde fino que mezcla morado y cian */
+    border: 1px solid rgba(124, 58, 237, 0.3);
+    /* Sombra resplandeciente */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    
+    text-align: center;
+    color: #f3f4f6;
+}
+
+.contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #f3f4f6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Efecto de texto brillante */
+    text-shadow: 0 0 10px rgba(124, 58, 237, 0.5);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Más espacio entre elementos */
+}
+
+.formulario label {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #a78bfa; 
+    margin-left: 5px; 
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 15px;
+    background-color: #1f2937; 
+    color: #ffffff; 
+    border: 2px solid #374151; 
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit; 
+    outline: none; 
+    transition: all 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    background-color: #111827; 
+    border-color: #22d3ee; 
+}
+
+.formulario textarea {
+    min-height: 150px;
+}
+
+.formulario button {
+    margin-top: 10px;
+    padding: 15px;
+    background: linear-gradient(90deg, #7c3aed, #22d3ee);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+}
+
+.formulario button:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02); 
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.6); 
+}
+
 footer {
     text-align: center;
-    padding: 20px;
-    background: #222;
-    color: white;
-    margin-top: 40px;
+    padding: 40px 20px;
+    background: #0f1115; /* Casi negro */
+    color: #9ca3af; /* Gris medio */
+    margin-top: 60px;
+    border-top: 1px solid #1f2937;
 }
 
 footer p {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.footer-nav a {
+    color: #e5e7eb;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #22d3ee; 
+}
+
+@media (max-width: 768px) {
+    .contenedor-metas {
+        flex-direction: column-reverse; 
+        text-align: center;
+    }
+
+    .contenedor-metas p {
+        text-align: justify; 
+    }
 }
